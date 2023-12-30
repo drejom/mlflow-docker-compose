@@ -30,7 +30,7 @@ services:
             exit 0;
             "
         volumes:
-            - $(pwd)/wait-for-it.sh:/tmp/wait-for-it.sh
+            - ./wait-for-it.sh:/tmp/wait-for-it.sh
 
     db:
         restart: always
